@@ -63,6 +63,12 @@ section{
     background: rgb(4, 13, 49);
     font-weight: 600;
 }
+.button:hover{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.button svg:hover{
+    stroke: #0ef;
+}
 .home-img-div{
     width: 50%;
     display: flex;
@@ -118,6 +124,10 @@ section{
     font-weight: 600;
     font-size: 1.6rem;
     color: white;  
+}
+.learn-btn:hover {
+    color: #0ef;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 .service-container{
     display: flex;
