@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calculator.css">
+</head>
+<body>
+    <div class="calculator">
+        <div class="content">
+            <h1>Calculator</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime non quasi temporibus deleniti quia dolores dolore voluptatum quos, laudantium eaque, fuga voluptatibus autem quis voluptatem pariatur, error labore accusamus in.</p>
+        </div>
+        <div class="container">
+            <p>Calculator<span><svg width="25" height="25" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 18h.01"></path>
+                <path d="M9.172 15.171a4 4 0 0 1 5.656 0"></path>
+                <path d="M6.343 12.343a8 8 0 0 1 11.314 0"></path>
+              </svg><svg width="21" height="21" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M6 18v-3"></path>
+                <path d="M10 18v-6"></path>
+                <path d="M14 18V9"></path>
+                <path d="M18 18V6"></path>
+              </svg><svg width="21" height="21" fill="#000000" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M6 7h11a2 2 0 0 1 2 2v.5a.5.5 0 0 0 .5.5.5.5 0 0 1 .5.5v3a.5.5 0 0 1-.5.5.5.5 0 0 0-.5.5v.5a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2"></path>
+              </svg></span></p>
+            <div class="input-div">
+                <input type="text" class="input" id="display" placeholder="0" readonly>
+            </div>
+            <button class="btn" onclick="clearDisplay()">AC</button>
+            <button class="btn" onclick="changeSign()">+/-</button>
+            <button class="btn" onclick="percentage()">%</button>
+            <button class="btn" onclick="appendOperator('/')">/</button>
+            <button class="btn" onclick="appendToDisplay('7')">7</button>
+            <button class="btn" onclick="appendToDisplay('8')">8</button>
+            <button class="btn" onclick="appendToDisplay('9')">9</button>
+            <button class="btn" onclick="appendOperator('*')">*</button>
+            <button class="btn" onclick="appendToDisplay('4')">4</button>
+            <button class="btn" onclick="appendToDisplay('5')">5</button>
+            <button class="btn" onclick="appendToDisplay('6')">6</button>
+            <button class="btn" onclick="appendOperator('-')">-</button>
+            <button class="btn" onclick="appendToDisplay('1')">1</button>
+            <button class="btn" onclick="appendToDisplay('2')">2</button>
+            <button class="btn" onclick="appendToDisplay('3')">3</button>
+            <button class="btn" onclick="appendOperator('+')">+</button>
+            <button class="btn" onclick="appendToDisplay('0')">0</button>
+            <button class="btn" onclick="appendDecimal()">.</button>
+            <button class="btn" onclick="calculateResult()">=</button>
+        </div>
+    </div>
+    <script src="calculator.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+</body>
+</html>

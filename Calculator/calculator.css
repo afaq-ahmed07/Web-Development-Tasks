@@ -1,0 +1,115 @@
+*{
+    scroll-behavior: smooth;
+    font-family: 'Poppins',sans-serif;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(cinque.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.calculator{
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+.content{
+    width: 60%;
+    height: 70dvh;
+    background-color:#555A60;
+    border-radius: 20px;
+    height: 60dvh;
+}
+.content h1{
+    font-size: 6rem;
+    font-weight: 700;
+    line-height: 1.1;
+    color: #F4AB41;
+    padding-left: 1rem;
+    margin-bottom: 0;
+    padding-top: 2rem;
+}
+.content p{
+    font-size: 1.3rem;
+    padding-left: 2rem;
+    color: #E3E9EC;
+}
+.container span{
+    padding-left: 7rem;
+}
+.container{
+    background-color:white;
+    width: 23%;
+    border-radius: 30px;
+    padding-left: 20px;
+    height: 100dvh;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.container p{
+    color: #F4AB41;
+    font-size: 1rem;
+    font-weight: 600;
+}
+.btn{
+    border-radius: 50%;
+    background: transparent;
+    border: none;
+    color: #555A60;
+    font-family: 'Poppins';
+    font-weight: 600;
+    text-align: center;
+    font-size: 1.3rem;
+    width: 3.9rem;
+    height: 10dvh;
+    margin-bottom: 12px;
+
+}
+.btn:hover{
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+.btn:nth-child(3){
+    color: #F4AB41;
+}
+.btn:nth-child(6){
+    background-color: #E3E9EC;
+    color: #F4AB41;
+}
+.btn:nth-child(10){
+    background-color: #E3E9EC;
+    color: #F4AB41;
+}
+.btn:nth-child(14){
+    background-color: #E3E9EC;
+    color: #F4AB41;
+}
+.btn:nth-child(18){
+    background-color: #E3E9EC;
+    color: #F4AB41;
+}
+.btn:nth-child(21){
+    background-color: #E3E9EC;
+    color: #F4AB41;
+    width: 8.2rem;
+    border-radius: 40px;
+}
+.input-div{
+    height: 30dvh;
+}
+.input {
+    margin-top: 5rem;
+    width: 90%;
+    height: 10dvh;
+    font-size: 3.2rem;
+    text-align: right;
+    background: transparent;
+    border: none;
+    color: #F4AB41;
+}
+.input:focus{
+    outline: none;
+}
+.input::placeholder{
+    color: #F4AB41;
+}
