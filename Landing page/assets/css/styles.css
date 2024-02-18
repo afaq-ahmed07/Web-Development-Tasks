@@ -4,9 +4,6 @@
     text-decoration: none;
     box-sizing: border-box;
 }
-html{
-    font-size: 62.5%;
-}
 #logo{
     font-size: 2.7rem;
     font-weight: 800;
@@ -18,7 +15,6 @@ html{
 }
 .links a{
     font-size: 1.8rem;
-    width: 60%;
     color: black;
     font-weight: 600;
 }
@@ -176,8 +172,6 @@ section{
     justify-content: center;
     align-items: center;
     gap: 2rem;
-    width: 250dvh;
-    height: 50dvh;
 } 
 .about-brands div{
     flex-basis: 28%;
@@ -273,6 +267,17 @@ section{
     }
     .learn-btn{
         text-decoration: none;
+    }
+}
+@media (max-width: 1200px){
+    html {
+        font-size:70%;
+      }
+    #about{
+        flex-direction: column;
+    }
+    .about-brands{
+        margin-top: 2rem;
     }
 }
 
