@@ -5,10 +5,10 @@
     box-sizing: border-box;
 }
 body{
-    background-image: url(cinque.jpg);
-    background-size: cover;
-    background-position: center;
+    background-image: url(gradient.jpg);
+    background-position:  center; 
     background-repeat: no-repeat;
+    background-size: cover;
 }
 .calculator{
     display: flex;
@@ -17,10 +17,10 @@ body{
 }
 .content{
     width: 60%;
-    height: 70dvh;
-    background-color:#555A60;
-    border-radius: 20px;
     height: 60dvh;
+    border-radius: 20px;
+    background-color: #3f4041;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 .content h1{
     font-size: 6rem;
@@ -34,7 +34,7 @@ body{
 .content p{
     font-size: 1.3rem;
     padding-left: 2rem;
-    color: #E3E9EC;
+    color: white;
 }
 .container span{
     padding-left: 7rem;
