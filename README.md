@@ -16,7 +16,7 @@ A dynamic portfolio showcasing my skills and projects, built with HTML, CSS, and
 
 ---
 
-## Task 3: Calculator (your-task-3)
+## Task 3: Calculator
 
 ### Description:
 A simple calculator application created with HTML, CSS, and JavaScript for basic calculations.
