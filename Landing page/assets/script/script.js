@@ -8,6 +8,6 @@ document.addEventListener('DOMContentLoaded', function () {
   
     ScrollReveal().reveal('.home-content h1, .services-content h1, .about-content h1, .about-span1', { origin: 'top' });
     ScrollReveal().reveal('.home-img, .service-container div, .about-brands div', { origin: 'right' });
-    ScrollReveal().reveal('.home-content p, .services-content p, .about-content p, .learn-btn, .button', { origin: 'bottom' });
+    ScrollReveal().reveal('.home-content p, .services-content p, .about-content p, .learn-btn, .button, .contact', { origin: 'bottom' });
   });
   

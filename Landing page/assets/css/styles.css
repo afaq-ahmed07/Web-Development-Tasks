@@ -7,35 +7,30 @@
 html{
     font-size: 62.5%;
 }
-.header{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 2rem 9%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 1;
-}
 #logo{
     font-size: 2.7rem;
     font-weight: 800;
     color:#19063c;
 }
+.links li{
+    padding-right: 30px;
+
+}
 .links a{
-    font-size: 1.7rem;
-    margin-left: 4rem;
-    width: 50%;
+    font-size: 1.8rem;
+    width: 60%;
     color: black;
     font-weight: 600;
+}
+.links li:hover{
+    border-bottom: 2px solid #0ef;
 }
 .links a:hover{
     color: #0ef;
 }
 section{
-    min-height: 100vh;
-    padding: 10rem 5% 2rem;
+    min-height: 70vh;
+    padding: 5rem 5% 2rem;
 }
 #home{
     display: flex;
@@ -183,9 +178,9 @@ section{
     gap: 2rem;
     width: 250dvh;
     height: 50dvh;
-}
+} 
 .about-brands div{
-    flex-basis: 25%;
+    flex-basis: 28%;
     background-color: whitesmoke;
     padding-right: 1rem;
     padding-bottom: 5rem;
@@ -205,20 +200,8 @@ section{
     font-size: 1.7rem;
 }
 .footer{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 2rem;
     background-color:#19063c;
-    width: 100%;
     border-radius: 6rem 6rem 0 0;
-    height: 50dvh;
-}
-.footer div{
-    flex-basis: 20%;
-    margin-top: 5rem;
-    padding-left: 2rem;
 }
 .footer h3{
     font-size: 1.8rem;
@@ -231,8 +214,141 @@ section{
     line-height: 1.5;
     color: azure;
 }
-.impact-rights{
+
+#contact{
+    width: 80%;
+    padding: 45px;
+    border-radius: 0;
+    background-color: white;
+}
+.contact-body{
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 15px;
+    padding: 2rem;
+    border-radius: 2rem;
+    background-color: whitesmoke;
+}
+.contact-body h1{
     text-align: center;
+    font-size: 2.6rem;
+    font-weight: 600;
+}
+.get-in-touch{
+    padding: 2rem;
+}
+.contact-us{
+    padding: 20px;
+}
+.form-control{
+    height: 5rem;
+    background: whitesmoke;
+    color: #000;
+    font-size: large;
+    border-radius: 2px;
+    box-sizing: none !important;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+.form-control::placeholder{
     font-size: 1.3rem;
-    color: azure;
+}
+.form-label{
+    font-size: 2rem;
+}
+.bi{
+    font-size: 20px;
+}
+.contact-p p{
+    font-size: 2rem;
+    padding-left: 18px;
+}
+.send-btn{
+    font-size: 5rem;
+    font-weight: 400;
+}
+
+@media screen
+{
+    html {
+      font-size:55%;
+    }
+    .learn-btn{
+        text-decoration: none;
+    }
+}
+
+@media(max-width: 991px)
+{
+    #services{
+        flex-direction: column-reverse;
+    }
+    #about{
+        flex-direction: column;
+    }
+    .about-brands div{
+        flex-basis: 25%;
+    }
+    .learn-btn{
+        text-decoration: none;
+    }
+    .footer{
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 768px){
+    #home{
+        flex-direction: column;
+      }
+      .home-content h3{
+        font-size: 2.6rem;
+      }
+    
+      .home-content h1{
+        font-size: 5rem;
+      }
+      .home-img img{
+        width: 70vw;
+        margin-top: 4rem;
+      }
+      #services{
+        flex-direction: column-reverse;
+      }
+      #about{
+        flex-direction: column;
+      }
+      .about-brands{
+        height: 70dvh;
+        width: 100dvh;
+        flex-direction: row;
+      }
+      .about-brands div{
+        flex-basis: 35%;
+      }
+      .about-brands{
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .learn-btn{
+        text-decoration: none;
+    }
+}
+@media (max-width: 617px)
+{
+    .about-brands{
+        grid-template-columns: 1fr;
+    }
+    #contact{
+        width: 100%;
+    }
+}
+@media (max-width:450px)
+{
+    html{
+        font-size: 50%;
+    }
+}
+
+@media (max-width: 365px) {
+    .home-img img{
+        width: 90vw;
+    }
 }
