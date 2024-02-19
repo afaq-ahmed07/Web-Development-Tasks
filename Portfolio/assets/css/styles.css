@@ -1,1 +1,285 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+:root{
+    --bg-color: #1f242d;
+    --second-bg-color:#323946;
+    --text-color: #0f012a;
+    --main-color:rgb(255, 165, 0);
+}
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+section{
+    min-height: 100vh;
+    /* padding:10rem 9% 2rem; */
+
+}
+
+.header {
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
+    padding: 2rem 9%;
+    background: white;
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.header.sticky{
+    border-bottom: .1rem solid rgba(0, 0, 0, .2);
+}
+
+.logo {
+    font-size: 2.5rem;
+    color: var(--text-color);
+    font-weight: 600;
+    cursor:default;
+}
+.navbar a{
+font-size: 1.7rem;
+color: var(--text-color);
+margin-left: 4rem;
+transition:.3s;
+font-weight: 600;
+}
+
+.navbar a:hover,.navbar a.active{
+ color: var(--main-color);
+}
+
+#menu-icon
+{
+font-size:3.6rem ;
+color:var(--text-color);
+display:none;
+}
+#home{
+    background: whitesmoke;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    gap: 2rem;
+    
+}
+.socials{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 2rem;
+}
+.socials a{
+    padding-bottom: 1rem;
+}
+.home-content{
+    width: 45%;
+    padding-left: 6rem;
+}
+.home-img img{
+    width: 35vw;
+    height: 80dvh;
+}
+.home-p1{
+    color: var(--main-color);
+    font-size: 3rem;
+    font-weight: 600;
+}
+.heading{
+    color: var(--text-color);
+    font-size: 6.3rem;
+    font-weight: 700;
+}
+.sub-heading{
+    color: var(--text-color);
+    font-size: 3rem;
+    font-weight: 600;
+}
+.home-p2{
+    padding: 1rem;
+    font-size: 1.2rem;
+}
+.hire-me{
+    width: 120px;
+    height: 50px;
+    font-size: 1.7rem;
+    font-weight: 600;
+    background: #fff;
+    border-radius: 50px;
+    color: #000;
+    outline: none;
+    cursor: pointer;
+    margin-left: 3rem;
+    background-color: var(--main-color);
+}
+.cv-btn,.contact-btn{
+    width: 170px;
+    height: 60px;
+    font-size: 18px;
+    background: #fff;
+    border-radius: 50px;
+    color: var(--text-color);
+    outline: none;
+    cursor: pointer;
+    margin: 2rem;
+}
+.cv-btn{
+    background-color: var(--main-color);
+}
+.cv-btn:hover{
+    border: 2px solid  var(--main-color);
+    box-shadow: var(--main-color) 0px 3px 8px;
+}
+.contact-btn{
+    border: 2px solid  var(--main-color);
+}
+.contact-btn:hover{
+    box-shadow: var(--main-color) 0px 3px 8px;
+}
+
+/* media query */
+@media (max-width: 1200px)
+{
+    #menu-icon{
+        display: block;
+    }
+    .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 1rem 3%;
+        background: white;
+        border-top: .1rem solid rgba(0, 0, 0, .2);
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
+        display: none;
+    }
+
+    .navbar.active{
+        display: block;
+    }
+    .navbar a{
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0;
+    }
+    .home:nth-child(even){
+        flex-direction: column;
+    }
+    .socials{
+        position: absolute;
+        top: 35rem;
+    }
+    .home-content{
+        margin-top: 9rem;
+        width: 75%;
+    }
+    .hire-me{
+        display: none;
+    }
+}
+@media (max-width: 991px)
+{
+    #menu-icon{
+        display: block;
+    }
+    .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 1rem 3%;
+        background: white;
+        border-top: .1rem solid rgba(0, 0, 0, .2);
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
+        display: none;
+    }
+
+    .navbar.active{
+        display: block;
+    }
+    .navbar a{
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0;
+    }
+    .home:nth-child(even){
+        flex-direction: column;
+    }
+    .socials{
+        position: absolute;
+        top: 15rem;
+    }
+    .home-content{
+        margin-top: 9rem;
+        width: 75%;
+    }
+    .hire-me{
+        display: none;
+    }
+}
+
+@media (max-width: 768px)
+{
+    #menu-icon{
+        display: block;
+    }
+    .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 1rem 3%;
+        background: white;
+        border-top: .1rem solid rgba(0, 0, 0, .2);
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
+        display: none;
+        z-index: 1;
+    }
+
+    .navbar.active{
+        display: block;
+    }
+    .navbar a{
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0;
+    }
+    .home:nth-last-child(){
+        flex-direction: column;
+    }
+    .socials{
+        position: absolute;
+        top: 25rem;
+    }
+}
+@media (max-width: 650px){
+    .heading{
+        font-size: 4.5rem;
+    }
+    .sub-heading,.home-p1{
+        font-size: 2rem;
+    }
+    .home-p2{
+        font-size: 1.2rem;
+    }
+    .cv-btn,.contact-btn{
+        width: 16rem;
+    }
+}
+@media (max-width: 600px){
+    .cv-btn,.contact-btn{
+        width: 15rem;
+        height: 6rem;
+    }
+}
