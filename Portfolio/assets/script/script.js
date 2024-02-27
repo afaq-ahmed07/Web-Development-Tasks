@@ -34,3 +34,16 @@ window.onscroll = () =>{
 
   
 }
+document.addEventListener('DOMContentLoaded', function () {
+    ScrollReveal({
+      reset: true,
+      distance: '80px',
+      duration: 2000,
+      delay: 100
+    });
+  
+    ScrollReveal().reveal('.heading, .sub-heading, .about-span1,.about-p1,.about-text,.interest-p,.interest-heading,.skills-content,.services-content,.portfolio-content,.portfolio-nav', { origin: 'top' });
+    ScrollReveal().reveal('.home-p1, .home-p2,.home-img,.about-heading,.info,.services-container,.form-div,.send-btn', { origin: 'right' });
+    ScrollReveal().reveal('.socials,.about-img,.portfolio-box', { origin: 'left' });
+    ScrollReveal().reveal('.cv-btn,.contact-btn,.bar,.skills-div', { origin: 'bottom' });
+  });
