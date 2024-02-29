@@ -1,65 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/styles.css">
     <title>Landing Page</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
-    <body>
-        <nav class="navbar navbar-expand-lg bg-transparent sticky">
-            <div class="container">
-              <a class="navbar-brand fs-4" href="#"><span id="logo">impact</span></a>
-              <!-- menu-icon -->
-              <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <!-- Sidebar -->
-              <div class="sidebar offcanvas offcanvas-start w-50 p-3" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-                <!-- Sidebar Header -->
-                <div class="offcanvas-header border-bottom">
-                <span id="logo" class="">impact</span>
-                  <button type="button" class="btn-close shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-                <!-- Sidebar Body -->
-                <div class="offcanvas-body">
-                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 links">
-                    <li class="nav-item mx-2">
-                      <a class="nav-link active" aria-current="page" href="#home">Home</a>
-                    </li>
-                    <li class="nav-item mx-2">
-                      <a class="nav-link" href="#services">Services</a>
-                    </li> 
-                    <li class="nav-item mx-2">
-                        <a class="nav-link" href="#about">About</a>
-                      </li>
-                    <li class="nav-item mx-2">
-                        <a class="nav-link" href="#contact">Contact</a>
-                    </li> 
-                </div>
-              </div>
-            </div>
-          </nav>
-        <section id="home" class="container">
-            <div class="home-content">
-                <h1 class="heading">Great Marketing<br> Make The Customer<br><span>Feel Smart</span></h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
-            <a href="#" alt="play-button" class="button"><svg width="30" height="30" fill="none" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path d="m5 3 14 9-14 9V3z"></path>
-              </svg></a>
+
+<body>
+    <header class="header">
+        <a href="#" class="logo">Portfolio</a>
+        <svg class='bx bx-menu' id="menu-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+            viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);">
+            <path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"></path>
+        </svg>
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
+            <button class="hire-me">Hire Me</button>
+        </nav>
+    </header>
+    <section id="home" class="container-fluid">
+        <div class="home-content">
+            <h1 class="heading">Great Marketing<br> Make The Customer<br><span>Feel Smart</span></h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio dignissimos eveniet aliquid neque consequatur vitae quisquam sit, dolores repellat vel ad, deserunt ex reprehenderit totam odit autem, aperiam repellendus deleniti.</p>
+            <a href="#" alt="play-button" class="button"><svg width="30" height="30" fill="none" stroke="white"
+                    stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="m5 3 14 9-14 9V3z"></path>
+                </svg></a>
         </div>
         <div class="home-img">
             <span class="home-img-div">
-                <img src="assets/images/brand.jpg" alt="brand-img" width="50%">
+                <img src="assets/images/brand.png" alt="brand-img" width="50%">
             </span>
         </div>
     </section>
-    <section id="services" class="container">
+    <section id="about" class="container-fluid">
+        <div class="about-content">
+            <span class="about-span1">We Partner With Brands To</span>
+            <h1>Create Superior<br><span class="about-span2">Digital Experience</span></h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores suscipit error architecto, illum nobis
+                tenetur, excepturi consequatur delectus voluptates voluptatem reiciendis molestias. Veniam ut doloribus
+                aliquid ab similique aliquam reiciendis?</p>
+            <a href="#" alt="learn more button" class="learn-btn">Learn More</a>
+        </div>
+        <div class="about-brands container">
+            <div class="netflix">
+                <span><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="40" height="35" viewBox="0 0 50 50"
+                        fill="red">
+                        <path
+                            d="M 4.75 19 C 5.4375 19 6.171875 19 6.855469 19 C 6.847656 23.183594 6.839844 27.371094 6.835938 31.554688 C 6.097656 31.632813 5.289063 31.734375 4.558594 31.816406 C 3.621094 29.195313 3.042969 27.566406 2.101563 24.804688 C 2.101563 27.609375 2.097656 29.335938 2.097656 32.140625 C 1.414063 32.226563 0.683594 32.320313 0 32.417969 C 0 27.945313 0 23.472656 0 19 C 0.769531 19 1.25 19 2.019531 19 C 2.929688 21.9375 3.835938 23.785156 4.738281 26.578125 C 4.742188 23.714844 4.746094 21.863281 4.75 19 Z M 14.730469 21.074219 C 14.730469 20.46875 14.71875 19.601563 14.71875 19 C 12.765625 19 10.839844 19 8.886719 19 C 8.878906 23.125 8.871094 27.253906 8.863281 31.378906 C 10.8125 31.203125 12.765625 31.058594 14.71875 30.945313 C 14.722656 30.339844 14.722656 29.472656 14.722656 28.871094 C 13.453125 28.949219 12.238281 29.027344 10.96875 29.113281 C 10.972656 28.007813 10.972656 27.089844 10.976563 25.980469 C 11.902344 25.964844 12.878906 25.976563 13.824219 25.960938 C 13.824219 25.355469 13.828125 24.484375 13.828125 23.878906 C 12.890625 23.894531 11.902344 23.898438 10.980469 23.914063 C 10.980469 22.804688 10.984375 22.195313 10.988281 21.085938 C 11.566406 21.078125 14.246094 21.078125 14.730469 21.074219 Z M 16.082031 21.070313 C 16.175781 21.070313 18.199219 21.082031 18.269531 21.082031 C 18.265625 24.410156 18.261719 27.445313 18.257813 30.773438 C 18.945313 30.746094 19.679688 30.726563 20.367188 30.710938 C 20.367188 27.402344 20.371094 24.382813 20.375 21.074219 C 21.101563 21.070313 21.851563 21.066406 22.574219 21.066406 C 22.574219 20.476563 22.578125 19.601563 22.578125 19.011719 C 20.4375 19.011719 18.222656 19.011719 16.085938 19.011719 C 16.085938 19.609375 16.082031 20.472656 16.082031 21.070313 Z M 29.800781 19 C 27.847656 19 25.894531 19 23.945313 19 C 23.941406 22.882813 23.941406 26.769531 23.941406 30.652344 C 24.167969 30.652344 24.398438 30.652344 24.628906 30.652344 C 25.09375 30.652344 25.566406 30.652344 26.027344 30.65625 C 26.027344 29.007813 26.027344 27.503906 26.027344 25.855469 C 26.140625 25.855469 28.601563 25.851563 28.878906 25.855469 C 28.878906 25.265625 28.878906 24.386719 28.875 23.796875 C 28.613281 23.792969 26.132813 23.796875 26.027344 23.796875 C 26.027344 22.734375 26.023438 22.136719 26.023438 21.078125 C 26.253906 21.078125 29.230469 21.078125 29.800781 21.082031 C 29.800781 20.488281 29.800781 19.59375 29.800781 19 Z M 33.261719 28.773438 C 33.257813 25.414063 33.277344 22.367188 33.269531 19.007813 C 32.585938 19.007813 31.851563 19.007813 31.164063 19.007813 C 31.171875 22.929688 31.152344 26.851563 31.15625 30.773438 C 33.027344 30.84375 34.996094 30.917969 36.867188 31.050781 C 36.863281 30.445313 36.863281 29.578125 36.863281 28.976563 C 35.679688 28.90625 34.445313 28.820313 33.261719 28.773438 Z M 38.617188 31.175781 C 39.304688 31.230469 40.011719 31.285156 40.699219 31.347656 C 40.699219 27.238281 40.707031 23.121094 40.699219 19.011719 C 40.011719 19.011719 39.277344 19.011719 38.59375 19.011719 C 38.601563 23.066406 38.609375 27.121094 38.617188 31.175781 Z M 47.246094 25.328125 C 48.136719 23.222656 49.042969 21.214844 49.96875 19.011719 C 49.210938 19.011719 48.429688 19.011719 47.667969 19.011719 C 47.097656 20.371094 46.707031 21.246094 46.160156 22.542969 C 45.652344 21.195313 45.3125 20.320313 44.800781 19.011719 C 44.042969 19.011719 43.261719 19.011719 42.503906 19.011719 C 43.34375 21.0625 44.113281 23.117188 44.96875 25.296875 C 44.082031 27.386719 43.175781 29.464844 42.289063 31.472656 C 43.023438 31.542969 43.785156 31.648438 44.519531 31.730469 C 45.046875 30.441406 45.523438 29.445313 46.054688 28.117188 C 46.578125 29.53125 47.058594 30.625 47.585938 32.082031 C 48.316406 32.179688 49.269531 32.316406 50 32.417969 C 49.113281 30.046875 48.140625 27.574219 47.246094 25.328125 Z">
+                        </path>
+                    </svg></span>
+            </div>
+            <div class="ibm">
+                <span><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="35" height="35"
+                        viewBox="0 0 48 48">
+                        <path fill="#3f51b5"
+                            d="M48 16L48 14 40.469 14 39.809 16zM33 31L33 29 29 29 27 29 27 31zM39.766 28L40.51 26 34.51 26 35.266 28zM29 26H33V28H29zM29 23H33V25H29zM42 29L42 31 48 31 48 29 46 29zM36.181 19L35.521 17 27 17 27 19 29 19zM37.17 22L36.51 20 29 20 29 22zM33.378 23L34.133 25 40.883 25 41.628 23zM42 23H46V25H42zM27 32H33V34H27zM35.191 16L34.531 14 27 14 27 16zM36.776 32L37.531 34 38.276 32zM42 32H48V34H42zM39.479 17L38.819 19 46 19 48 19 48 17zM39.393 29L35.643 29 36.398 31 38.648 31zM42 26H46V28H42zM38.49 20L37.83 22 46 22 46 20zM0 14H8V16H0zM0 17H8V19H0zM2 20H6V22H2zM2 23H6V25H2zM2 26H6V28H2zM0 29H8V31H0zM0 32H8V34H0zM10 17H18V19H10zM24.977 16c-.913-1.208-2.347-2-3.977-2H10v2h7.023H24.977z">
+                        </path>
+                        <path fill="#3f51b5"
+                            d="M25.578 17h-9.131C16.171 17.613 16 18.283 16 19h10C26 18.288 25.846 17.613 25.578 17zM23.975 23H12v2h11.973c-.833-.62-1.854-1-2.973-1C22.119 24 23.142 23.621 23.975 23zM17.023 32H10v2h11c1.63 0 3.065-.792 3.977-2H17.023zM18 29h-2-6v2h6.447H18h7.578C25.846 30.387 26 29.712 26 29H18zM21 20c0 0 0 .083 0 1s-1 1-1 1h4.979c.441-.584.77-1.257.921-2H21zM12 20H17V22H12z">
+                        </path>
+                        <g>
+                            <path fill="#3f51b5"
+                                d="M21 28h4.885c-.156-.738-.467-1.418-.907-2H20c0 0 1 .167 1 1S21 28 21 28zM12 26H17V28H12z">
+                            </path>
+                        </g>
+                    </svg></span>
+            </div>
+            <div class="google">
+                <span><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="35" height="35"
+                        viewBox="0 0 50 50">
+                        <path
+                            d="M 25.996094 48 C 13.3125 48 2.992188 37.683594 2.992188 25 C 2.992188 12.316406 13.3125 2 25.996094 2 C 31.742188 2 37.242188 4.128906 41.488281 7.996094 L 42.261719 8.703125 L 34.675781 16.289063 L 33.972656 15.6875 C 31.746094 13.78125 28.914063 12.730469 25.996094 12.730469 C 19.230469 12.730469 13.722656 18.234375 13.722656 25 C 13.722656 31.765625 19.230469 37.269531 25.996094 37.269531 C 30.875 37.269531 34.730469 34.777344 36.546875 30.53125 L 24.996094 30.53125 L 24.996094 20.175781 L 47.546875 20.207031 L 47.714844 21 C 48.890625 26.582031 47.949219 34.792969 43.183594 40.667969 C 39.238281 45.53125 33.457031 48 25.996094 48 Z">
+                        </path>
+                    </svg></span>
+            </div>
+            <div class="apple">
+                <span><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="35" height="35"
+                        viewBox="0 0 50 50">
+                        <path
+                            d="M 44.527344 34.75 C 43.449219 37.144531 42.929688 38.214844 41.542969 40.328125 C 39.601563 43.28125 36.863281 46.96875 33.480469 46.992188 C 30.46875 47.019531 29.691406 45.027344 25.601563 45.0625 C 21.515625 45.082031 20.664063 47.03125 17.648438 47 C 14.261719 46.96875 11.671875 43.648438 9.730469 40.699219 C 4.300781 32.429688 3.726563 22.734375 7.082031 17.578125 C 9.457031 13.921875 13.210938 11.773438 16.738281 11.773438 C 20.332031 11.773438 22.589844 13.746094 25.558594 13.746094 C 28.441406 13.746094 30.195313 11.769531 34.351563 11.769531 C 37.492188 11.769531 40.8125 13.480469 43.1875 16.433594 C 35.421875 20.691406 36.683594 31.78125 44.527344 34.75 Z M 31.195313 8.46875 C 32.707031 6.527344 33.855469 3.789063 33.4375 1 C 30.972656 1.167969 28.089844 2.742188 26.40625 4.78125 C 24.878906 6.640625 23.613281 9.398438 24.105469 12.066406 C 26.796875 12.152344 29.582031 10.546875 31.195313 8.46875 Z">
+                        </path>
+                    </svg></span>
+            </div>
+            <div class="facebook">
+                <span><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="35" height="35" viewBox="0 0 50 50"
+                        fill="blue">
+                        <path
+                            d="M32,11h5c0.552,0,1-0.448,1-1V3.263c0-0.524-0.403-0.96-0.925-0.997C35.484,2.153,32.376,2,30.141,2C24,2,20,5.68,20,12.368 V19h-7c-0.552,0-1,0.448-1,1v7c0,0.552,0.448,1,1,1h7v19c0,0.552,0.448,1,1,1h7c0.552,0,1-0.448,1-1V28h7.222 c0.51,0,0.938-0.383,0.994-0.89l0.778-7C38.06,19.518,37.596,19,37,19h-8v-5C29,12.343,30.343,11,32,11z">
+                        </path>
+                    </svg></span>
+            </div>
+            <div class="youtbe">
+                <span><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="35" height="35" viewBox="0 0 50 50"
+                        fill="red">
+                        <path
+                            d="M 44.898438 14.5 C 44.5 12.300781 42.601563 10.699219 40.398438 10.199219 C 37.101563 9.5 31 9 24.398438 9 C 17.800781 9 11.601563 9.5 8.300781 10.199219 C 6.101563 10.699219 4.199219 12.199219 3.800781 14.5 C 3.398438 17 3 20.5 3 25 C 3 29.5 3.398438 33 3.898438 35.5 C 4.300781 37.699219 6.199219 39.300781 8.398438 39.800781 C 11.898438 40.5 17.898438 41 24.5 41 C 31.101563 41 37.101563 40.5 40.601563 39.800781 C 42.800781 39.300781 44.699219 37.800781 45.101563 35.5 C 45.5 33 46 29.398438 46.101563 25 C 45.898438 20.5 45.398438 17 44.898438 14.5 Z M 19 32 L 19 18 L 31.199219 25 Z">
+                        </path>
+                    </svg></span>
+            </div>
+        </div>
+    </section>
+    <section id="services" class="container-fluid">
         <div class="service-container pt-5">
             <div class="branding">
-                <svg width="50" height="50" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <svg width="50" height="50" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round"
+                    stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <path d="M3 21h18"></path>
                     <path d="M9 8h1"></path>
                     <path d="M9 12h1"></path>
@@ -68,28 +124,31 @@
                     <path d="M14 12h1"></path>
                     <path d="M14 16h1"></path>
                     <path d="M5 21V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16"></path>
-                  </svg><br>
+                </svg><br>
                 <span>Branding & <br>Digital Strategies</span>
             </div>
             <div class="web">
-                <svg width="50" height="50" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <svg width="50" height="50" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round"
+                    stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <path d="M16 4H8a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1Z"></path>
                     <path d="M11 5h2"></path>
                     <path d="M12 17v.01"></path>
-                  </svg><br>
+                </svg><br>
                 <span>Web & Mobile<br>Design & Develop</span>
             </div>
             <div class="digital">
-                <svg width="50" height="50" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <svg width="50" height="50" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round"
+                    stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <path d="M4 21V8a3 3 0 0 1 3-3h10a3 3 0 0 1 3 3v6a3 3 0 0 1-3 3H8l-4 4Z"></path>
                     <path d="M12 11v.01"></path>
                     <path d="M8 11v.01"></path>
                     <path d="M16 11v.01"></path>
-                  </svg><br>
+                </svg><br>
                 <span>Result Driven <br>Digital Marketing</span>
             </div>
             <div class="software">
-                <svg width="50" height="50" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <svg width="50" height="50" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round"
+                    stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <path d="M18 5H6a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1Z"></path>
                     <path d="M9 9h6v6H9V9Z"></path>
                     <path d="M3 10h2"></path>
@@ -100,99 +159,30 @@
                     <path d="M21 14h-2"></path>
                     <path d="M14 21v-2"></path>
                     <path d="M10 21v-2"></path>
-                  </svg><br>
+                </svg><br>
                 <span>Software<br>Development</span>
             </div>
         </div>
         <div class="services-content">
             <h1 class="heading">Let's Level Up<br> Your Business With<br><span>Digital Media</span></h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam quo iure accusantium, nemo cumque aperiam! Quod, cumque commodi aliquid maxime quos dolores quo aspernatur autem perferendis, vitae possimus deserunt obcaecati.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam quo iure accusantium, nemo cumque aperiam!
+                Quod, cumque commodi aliquid maxime quos dolores quo aspernatur autem perferendis, vitae possimus
+                deserunt obcaecati.</p>
             <a href="#" alt="learn more button" class="learn-btn">Learn More</a>
         </div>
     </section>
-    <section id="about" class="container">
-        <div class="about-content">
-            <span class="about-span1">We Partner With Brands To</span>
-            <h1>Create Superior<br><span class="about-span2">Digital Experience</span></h1>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores suscipit error architecto, illum nobis tenetur, excepturi consequatur delectus voluptates voluptatem reiciendis molestias. Veniam ut doloribus aliquid ab similique aliquam reiciendis?</p>
-            <a href="#" alt="learn more button" class="learn-btn">Learn More</a>
-        </div>
-        <div class="about-brands container">
-            <div class="netflix">
-                <span><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="40" height="35" viewBox="0 0 50 50" fill="red">
-                    <path d="M 4.75 19 C 5.4375 19 6.171875 19 6.855469 19 C 6.847656 23.183594 6.839844 27.371094 6.835938 31.554688 C 6.097656 31.632813 5.289063 31.734375 4.558594 31.816406 C 3.621094 29.195313 3.042969 27.566406 2.101563 24.804688 C 2.101563 27.609375 2.097656 29.335938 2.097656 32.140625 C 1.414063 32.226563 0.683594 32.320313 0 32.417969 C 0 27.945313 0 23.472656 0 19 C 0.769531 19 1.25 19 2.019531 19 C 2.929688 21.9375 3.835938 23.785156 4.738281 26.578125 C 4.742188 23.714844 4.746094 21.863281 4.75 19 Z M 14.730469 21.074219 C 14.730469 20.46875 14.71875 19.601563 14.71875 19 C 12.765625 19 10.839844 19 8.886719 19 C 8.878906 23.125 8.871094 27.253906 8.863281 31.378906 C 10.8125 31.203125 12.765625 31.058594 14.71875 30.945313 C 14.722656 30.339844 14.722656 29.472656 14.722656 28.871094 C 13.453125 28.949219 12.238281 29.027344 10.96875 29.113281 C 10.972656 28.007813 10.972656 27.089844 10.976563 25.980469 C 11.902344 25.964844 12.878906 25.976563 13.824219 25.960938 C 13.824219 25.355469 13.828125 24.484375 13.828125 23.878906 C 12.890625 23.894531 11.902344 23.898438 10.980469 23.914063 C 10.980469 22.804688 10.984375 22.195313 10.988281 21.085938 C 11.566406 21.078125 14.246094 21.078125 14.730469 21.074219 Z M 16.082031 21.070313 C 16.175781 21.070313 18.199219 21.082031 18.269531 21.082031 C 18.265625 24.410156 18.261719 27.445313 18.257813 30.773438 C 18.945313 30.746094 19.679688 30.726563 20.367188 30.710938 C 20.367188 27.402344 20.371094 24.382813 20.375 21.074219 C 21.101563 21.070313 21.851563 21.066406 22.574219 21.066406 C 22.574219 20.476563 22.578125 19.601563 22.578125 19.011719 C 20.4375 19.011719 18.222656 19.011719 16.085938 19.011719 C 16.085938 19.609375 16.082031 20.472656 16.082031 21.070313 Z M 29.800781 19 C 27.847656 19 25.894531 19 23.945313 19 C 23.941406 22.882813 23.941406 26.769531 23.941406 30.652344 C 24.167969 30.652344 24.398438 30.652344 24.628906 30.652344 C 25.09375 30.652344 25.566406 30.652344 26.027344 30.65625 C 26.027344 29.007813 26.027344 27.503906 26.027344 25.855469 C 26.140625 25.855469 28.601563 25.851563 28.878906 25.855469 C 28.878906 25.265625 28.878906 24.386719 28.875 23.796875 C 28.613281 23.792969 26.132813 23.796875 26.027344 23.796875 C 26.027344 22.734375 26.023438 22.136719 26.023438 21.078125 C 26.253906 21.078125 29.230469 21.078125 29.800781 21.082031 C 29.800781 20.488281 29.800781 19.59375 29.800781 19 Z M 33.261719 28.773438 C 33.257813 25.414063 33.277344 22.367188 33.269531 19.007813 C 32.585938 19.007813 31.851563 19.007813 31.164063 19.007813 C 31.171875 22.929688 31.152344 26.851563 31.15625 30.773438 C 33.027344 30.84375 34.996094 30.917969 36.867188 31.050781 C 36.863281 30.445313 36.863281 29.578125 36.863281 28.976563 C 35.679688 28.90625 34.445313 28.820313 33.261719 28.773438 Z M 38.617188 31.175781 C 39.304688 31.230469 40.011719 31.285156 40.699219 31.347656 C 40.699219 27.238281 40.707031 23.121094 40.699219 19.011719 C 40.011719 19.011719 39.277344 19.011719 38.59375 19.011719 C 38.601563 23.066406 38.609375 27.121094 38.617188 31.175781 Z M 47.246094 25.328125 C 48.136719 23.222656 49.042969 21.214844 49.96875 19.011719 C 49.210938 19.011719 48.429688 19.011719 47.667969 19.011719 C 47.097656 20.371094 46.707031 21.246094 46.160156 22.542969 C 45.652344 21.195313 45.3125 20.320313 44.800781 19.011719 C 44.042969 19.011719 43.261719 19.011719 42.503906 19.011719 C 43.34375 21.0625 44.113281 23.117188 44.96875 25.296875 C 44.082031 27.386719 43.175781 29.464844 42.289063 31.472656 C 43.023438 31.542969 43.785156 31.648438 44.519531 31.730469 C 45.046875 30.441406 45.523438 29.445313 46.054688 28.117188 C 46.578125 29.53125 47.058594 30.625 47.585938 32.082031 C 48.316406 32.179688 49.269531 32.316406 50 32.417969 C 49.113281 30.046875 48.140625 27.574219 47.246094 25.328125 Z"></path>
-                    </svg></span>
-            </div>
-            <div class="ibm">
-                <span><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="35" height="35" viewBox="0 0 48 48">
-                    <path fill="#3f51b5" d="M48 16L48 14 40.469 14 39.809 16zM33 31L33 29 29 29 27 29 27 31zM39.766 28L40.51 26 34.51 26 35.266 28zM29 26H33V28H29zM29 23H33V25H29zM42 29L42 31 48 31 48 29 46 29zM36.181 19L35.521 17 27 17 27 19 29 19zM37.17 22L36.51 20 29 20 29 22zM33.378 23L34.133 25 40.883 25 41.628 23zM42 23H46V25H42zM27 32H33V34H27zM35.191 16L34.531 14 27 14 27 16zM36.776 32L37.531 34 38.276 32zM42 32H48V34H42zM39.479 17L38.819 19 46 19 48 19 48 17zM39.393 29L35.643 29 36.398 31 38.648 31zM42 26H46V28H42zM38.49 20L37.83 22 46 22 46 20zM0 14H8V16H0zM0 17H8V19H0zM2 20H6V22H2zM2 23H6V25H2zM2 26H6V28H2zM0 29H8V31H0zM0 32H8V34H0zM10 17H18V19H10zM24.977 16c-.913-1.208-2.347-2-3.977-2H10v2h7.023H24.977z"></path><path fill="#3f51b5" d="M25.578 17h-9.131C16.171 17.613 16 18.283 16 19h10C26 18.288 25.846 17.613 25.578 17zM23.975 23H12v2h11.973c-.833-.62-1.854-1-2.973-1C22.119 24 23.142 23.621 23.975 23zM17.023 32H10v2h11c1.63 0 3.065-.792 3.977-2H17.023zM18 29h-2-6v2h6.447H18h7.578C25.846 30.387 26 29.712 26 29H18zM21 20c0 0 0 .083 0 1s-1 1-1 1h4.979c.441-.584.77-1.257.921-2H21zM12 20H17V22H12z"></path><g><path fill="#3f51b5" d="M21 28h4.885c-.156-.738-.467-1.418-.907-2H20c0 0 1 .167 1 1S21 28 21 28zM12 26H17V28H12z"></path></g>
-                    </svg></span>
-            </div>
-            <div class="google">
-                <span><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="35" height="35" viewBox="0 0 50 50">
-                    <path d="M 25.996094 48 C 13.3125 48 2.992188 37.683594 2.992188 25 C 2.992188 12.316406 13.3125 2 25.996094 2 C 31.742188 2 37.242188 4.128906 41.488281 7.996094 L 42.261719 8.703125 L 34.675781 16.289063 L 33.972656 15.6875 C 31.746094 13.78125 28.914063 12.730469 25.996094 12.730469 C 19.230469 12.730469 13.722656 18.234375 13.722656 25 C 13.722656 31.765625 19.230469 37.269531 25.996094 37.269531 C 30.875 37.269531 34.730469 34.777344 36.546875 30.53125 L 24.996094 30.53125 L 24.996094 20.175781 L 47.546875 20.207031 L 47.714844 21 C 48.890625 26.582031 47.949219 34.792969 43.183594 40.667969 C 39.238281 45.53125 33.457031 48 25.996094 48 Z"></path>
-                    </svg></span>
-            </div>
-            <div class="apple">
-                <span><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="35" height="35" viewBox="0 0 50 50">
-                    <path d="M 44.527344 34.75 C 43.449219 37.144531 42.929688 38.214844 41.542969 40.328125 C 39.601563 43.28125 36.863281 46.96875 33.480469 46.992188 C 30.46875 47.019531 29.691406 45.027344 25.601563 45.0625 C 21.515625 45.082031 20.664063 47.03125 17.648438 47 C 14.261719 46.96875 11.671875 43.648438 9.730469 40.699219 C 4.300781 32.429688 3.726563 22.734375 7.082031 17.578125 C 9.457031 13.921875 13.210938 11.773438 16.738281 11.773438 C 20.332031 11.773438 22.589844 13.746094 25.558594 13.746094 C 28.441406 13.746094 30.195313 11.769531 34.351563 11.769531 C 37.492188 11.769531 40.8125 13.480469 43.1875 16.433594 C 35.421875 20.691406 36.683594 31.78125 44.527344 34.75 Z M 31.195313 8.46875 C 32.707031 6.527344 33.855469 3.789063 33.4375 1 C 30.972656 1.167969 28.089844 2.742188 26.40625 4.78125 C 24.878906 6.640625 23.613281 9.398438 24.105469 12.066406 C 26.796875 12.152344 29.582031 10.546875 31.195313 8.46875 Z"></path>
-                    </svg></span>
-            </div>
-            <div class="facebook">
-                <span><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="35" height="35" viewBox="0 0 50 50" fill="blue">
-                    <path d="M32,11h5c0.552,0,1-0.448,1-1V3.263c0-0.524-0.403-0.96-0.925-0.997C35.484,2.153,32.376,2,30.141,2C24,2,20,5.68,20,12.368 V19h-7c-0.552,0-1,0.448-1,1v7c0,0.552,0.448,1,1,1h7v19c0,0.552,0.448,1,1,1h7c0.552,0,1-0.448,1-1V28h7.222 c0.51,0,0.938-0.383,0.994-0.89l0.778-7C38.06,19.518,37.596,19,37,19h-8v-5C29,12.343,30.343,11,32,11z"></path>
-                </svg></span>
-            </div>
-            <div class="youtbe">
-                <span><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="35" height="35" viewBox="0 0 50 50" fill="red">
-                    <path d="M 44.898438 14.5 C 44.5 12.300781 42.601563 10.699219 40.398438 10.199219 C 37.101563 9.5 31 9 24.398438 9 C 17.800781 9 11.601563 9.5 8.300781 10.199219 C 6.101563 10.699219 4.199219 12.199219 3.800781 14.5 C 3.398438 17 3 20.5 3 25 C 3 29.5 3.398438 33 3.898438 35.5 C 4.300781 37.699219 6.199219 39.300781 8.398438 39.800781 C 11.898438 40.5 17.898438 41 24.5 41 C 31.101563 41 37.101563 40.5 40.601563 39.800781 C 42.800781 39.300781 44.699219 37.800781 45.101563 35.5 C 45.5 33 46 29.398438 46.101563 25 C 45.898438 20.5 45.398438 17 44.898438 14.5 Z M 19 32 L 19 18 L 31.199219 25 Z"></path>
-                    </svg></span>
-            </div>
-        </div>
     </section>
-    <section id="contact" class="container contact">
-        <div class="row contact-body">
-            <div class="col-md-7 get-in-touch">
-                <h1>Get in Touch</h1>
-                <div class="mb-3">
-                    <label for="exampleFormControlInput1" class="form-label">Name:</label>
-                    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Enter Name">
-                  </div>
-                  <div class="mb-3">
-                    <label for="exampleFormControlInput1" class="form-label">Email:</label>
-                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Enter Email">
-                  </div>
-                  <div class="mb-3">
-                    <label for="exampleFormControlInput1" class="form-label">Contact:</label>
-                    <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="Enter Number">
-                  </div>
-                  <div class="mb-3">
-                    <label for="exampleFormControlTextarea1" class="form-label">Message:</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                </div>
-                <a href="#" alt="learn more button" class="learn-btn">Send</a>
-            </div>
-            <div class="col-md-5 contact-us container-fluid">
-                    <h1>Contact Us</h1>
-                    <div class="mt-5">
-                        <div class="d-flex contact-p">
-                            <i class="bi bi-geo-alt-fill"></i>
-                            <p>Address: 198 West 21th Street, Suite 721 New York NY 10016</p>
-                        </div><hr class="p-3">
-                        <div class="d-flex contact-p">
-                            <i class="bi bi-telephone-fill"></i>
-                            <p>Contact:- 88888888888</p>
-                        </div><hr class="p-3">
-                        <div class="d-flex contact-p">
-                            <i class="bi bi-envelope"></i>
-                            <p>Email:- Contact@gmail.com</p>
-                        </div><hr class="p-3">
-                        <div class="d-flex contact-p">
-                            <i class="bi bi-browser-chrome"></i>
-                            <p>Website: www.contact.com</p><hr class="p-3">
-                        </div>
-                    </div>
-            </div>
+    <section id="contact" class="container-fluid">
+        <div class="row">
+            <h4 class="contact-span">Contact Us</h4>
+            <h1 class="contact-heading">Get in Touch</h1>
+        </div>
+        <div class="form-div">
+            <input type="text" required="" autocomplete="off" placeholder="Name">
+            <input type="text" required="" autocomplete="off" placeholder="Email">
+            <input type="text" required="" autocomplete="off" placeholder="Subject">
+            <textarea name="message" class="textarea" rows="8" cols="40" required="" placeholder="Message"></textarea>
+            <button class="send-btn">Send Message</button>
         </div>
     </section>
     <footer class="footer container-fluid text-md-left p-5">
@@ -229,12 +219,17 @@
             </div>
             <div class="impact col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
                 <h3>impact</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore nostrum nisi magnam! Adipisci nam laboriosam similique, enim vel sit id, aliquid, dicta unde expedita recusandae esse temporibus iure ipsa a?</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore nostrum nisi magnam! Adipisci nam
+                    laboriosam similique, enim vel sit id, aliquid, dicta unde expedita recusandae esse temporibus iure
+                    ipsa a?</p>
             </div>
         </div>
     </footer>
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="assets/script/script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>

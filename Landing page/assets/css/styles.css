@@ -1,29 +1,69 @@
 *{
     scroll-behavior: smooth;
     font-family: 'Poppins',sans-serif;
-    text-decoration: none;
     box-sizing: border-box;
 }
-#logo{
-    font-size: 2.7rem;
-    font-weight: 800;
-    color:#19063c;
-}
-.links li{
-    padding-right: 30px;
-
-}
-.links a{
-    font-size: 1.8rem;
-    color: black;
+:root {
+    --bg-color: white;
+    --second-bg-color: whitesmoke;
+    --text-color: #0f012a;
+    --main-color: #0f012a;
+  }
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 9%;
+    background: var(--bg-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2;
+  }
+  
+  .header.sticky {
+    border-bottom: 0.1rem solid rgba(0, 0, 0, 0.2);
+  }
+  
+  .logo {
+    font-size: 2.5rem;
+    color: var(--text-color);
     font-weight: 600;
-}
-.links li:hover{
-    border-bottom: 2px solid #0ef;
-}
-.links a:hover{
-    color: #0ef;
-}
+    cursor: default;
+    text-decoration: none;
+  }
+  .navbar a {
+    font-size: 1.7rem;
+    color: var(--text-color);
+    margin-left: 4rem;
+    transition: 0.3s;
+    font-weight: 600;
+    text-decoration: none;
+  }
+  
+  .navbar a:hover,
+  .navbar a.active {
+    color: var(--main-color);
+  }
+  
+  #menu-icon {
+    font-size: 3.6rem;
+    color: var(--text-color);
+    display: none;
+  }
+  .hire-me {
+    width: 120px;
+    height: 50px;
+    font-size: 1.7rem;
+    font-weight: 600;
+    border-radius: 50px;
+    color: var(--bg-color);
+    outline: none;
+    cursor: pointer;
+    margin-left: 3rem;
+    background-color: var(--main-color);
+  }
 section{
     min-height: 70vh;
     padding: 5rem 5% 2rem;
@@ -33,13 +73,18 @@ section{
     justify-content: center;
     align-items: center;
     gap: 3rem;
+    background-color: var(--second-bg-color);
+    margin-top: 6rem;
     
+}
+.home-content{
+    flex-basis: 50%;
 }
 .home-content h1{
     font-size: 5.6rem;
     font-weight: 700;
     line-height: 1.1;
-    color: rgb(4, 13, 49);
+    color: var(--text-color);
 }
 .home-content span{
     color: #0ef;
@@ -51,7 +96,7 @@ section{
     display: inline-block;
     padding: 1rem 2.8rem;
     border-radius: 4rem;
-    background: rgb(4, 13, 49);
+    background: var(--text-color);
     font-weight: 600;
 }
 .button:hover{
@@ -70,7 +115,7 @@ section{
     animation: floatImage 4s  ease-in-out infinite;
 }
 .img-back{
-    background: rgb(4, 13, 49);
+    background: var(--text-color);
     z-index: -1;
     padding: 10px;
     border-radius: 15px;
@@ -93,13 +138,14 @@ section{
     justify-content: center;
     align-items: center;
     gap: 3rem;
+    background-color: var(--second-bg-color);
 
 }
 .services-content h1{
     font-size: 5.6rem;
     font-weight: 600;
     line-height: 1.1;
-    color: rgb(4, 13, 49);
+    color: var(--text-color);
 }
 .services-content span{
     color: #0ef;
@@ -111,7 +157,7 @@ section{
     display: inline-block;
     padding: 1rem 2.8rem;
     border-radius: 4rem;
-    background: rgb(4, 13, 49);
+    background: var(--text-color);
     font-weight: 600;
     font-size: 1.6rem;
     color: white;  
@@ -150,11 +196,16 @@ section{
     justify-content: center;
     align-items: center;
     gap: 2rem;
+    background-color: var(--bg-color);
+}
+.about-content{
+    flex-basis: 50%;
+    margin-left: 10rem;
 }
 .about-content h1{
     font-size: 5.6rem;
     font-weight: 600;
-    color: rgb(4, 13, 49);
+    color: var(--text-color);
     margin-top: 0;
 }
 .about-span1{
@@ -172,6 +223,7 @@ section{
     justify-content: center;
     align-items: center;
     gap: 2rem;
+    flex-basis: 50%;
 } 
 .about-brands div{
     flex-basis: 28%;
@@ -194,7 +246,7 @@ section{
     font-size: 1.7rem;
 }
 .footer{
-    background-color:#19063c;
+    background-color: var(--text-color);
     border-radius: 6rem 6rem 0 0;
 }
 .footer h3{
@@ -208,58 +260,79 @@ section{
     line-height: 1.5;
     color: azure;
 }
-
 #contact{
-    width: 80%;
-    padding: 45px;
-    border-radius: 0;
-    background-color: white;
-}
-.contact-body{
-    box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 15px;
-    padding: 2rem;
-    border-radius: 2rem;
-    background-color: whitesmoke;
-}
-.contact-body h1{
-    text-align: center;
-    font-size: 2.6rem;
-    font-weight: 600;
-}
-.get-in-touch{
-    padding: 2rem;
-}
-.contact-us{
-    padding: 20px;
-}
-.form-control{
-    height: 5rem;
-    background: whitesmoke;
-    color: #000;
-    font-size: large;
-    border-radius: 2px;
-    box-sizing: none !important;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    width: 100%;
-}
-.form-control::placeholder{
-    font-size: 1.3rem;
-}
-.form-label{
-    font-size: 2rem;
-}
-.bi{
-    font-size: 20px;
-}
-.contact-p p{
-    font-size: 2rem;
-    padding-left: 18px;
-}
-.send-btn{
-    font-size: 5rem;
-    font-weight: 400;
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
+.form-div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+  width: 80%;
+}
+.form-div input{
+  flex-basis: 43%;
+  margin-bottom: 1rem;
+  margin-right: 1rem;
+}
+.form-div input:nth-child(3){
+  flex-basis: 87%;
+}
+.form-div textarea{
+  flex-basis: 90%;
+  height: 40dvh;
+}
+
+input,.textarea{
+  font-size: 1.7rem;
+  padding: 0.8em;
+  outline: none;
+  border: 1px solid rgb(100, 100, 100);
+  background-color: transparent;
+
+}
+input{
+  height: 8dvh;
+}
+input::placeholder,.textarea::placeholder{
+  font-size: 1.7rem;
+  padding: 1em;
+  margin-left: 0.5em;
+  pointer-events: none;
+  color: rgb(100, 100, 100);
+}
+.textarea::placeholder{
+  padding: 0.5em;
+}
+input:focus::placeholder,textarea:focus::placeholder{
+  color: transparent;
+}
+.form-div :is(input:focus, input:valid) {
+  border-color: var(--main-color);
+}
+.send-btn {
+  width: 15rem;
+  height: 5rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  font-size: 1.7rem;
+  font-weight: 600;
+  border-radius: 50px;
+  color: var(--bg-color);
+  outline: none;
+  cursor: pointer;
+  transition:  all 1s ease;
+  background-color: var(--main-color);
+}
+.send-btn:hover {
+  box-shadow: var(--main-color) 0px 3px 8px;
+}
 @media screen
 {
     html {
@@ -273,6 +346,26 @@ section{
     html {
         font-size:70%;
       }
+      .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 1rem 3%;
+        background: var(--bg-color);
+        border-top: 0.1rem solid rgba(0, 0, 0, 0.2);
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+        display: none;
+      }
+    
+      .navbar.active {
+        display: block;
+      }
+      .navbar a {
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0;
+      }
     #about{
         flex-direction: column;
     }
@@ -283,6 +376,26 @@ section{
 
 @media(max-width: 991px)
 {
+    .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 1rem 3%;
+        background: var(--bg-color);
+        border-top: 0.1rem solid rgba(0, 0, 0, 0.2);
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+        display: none;
+      }
+    
+      .navbar.active {
+        display: block;
+      }
+      .navbar a {
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0;
+      }
     #services{
         flex-direction: column-reverse;
     }
@@ -301,6 +414,27 @@ section{
 }
 
 @media (max-width: 768px){
+    
+    .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 1rem 3%;
+        background: var(--bg-color);
+        border-top: 0.1rem solid rgba(0, 0, 0, 0.2);
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+        display: none;
+      }
+    
+      .navbar.active {
+        display: block;
+      }
+      .navbar a {
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0;
+      }
     #home{
         flex-direction: column;
       }
