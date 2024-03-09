@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do-List</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="to-do-div">
+        <div class="projects-div">
+            <div class="projects-info">
+                <h1 class="profile-head">Hi, Afaq</h1>
+                <p class="welcome">Welcome back to the workspace, We missed You!</p>
+                <div class="search-container">
+                    <input type="search" name="search-project" id="search-project" class="search-project" placeholder="Search Projects...">
+                    <svg class="search-icon" width="25" height="25" fill="none" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="m21 21-6-6m2-5a7.001 7.001 0 0 1-11.95 4.95A7 7 0 1 1 17 10Z"></path>
+                      </svg>
+                </div>
+                <h3 class="project-heading">Projects</h3>
+            </div>
+            <div class="projects">
+                <div class="project">
+                    <h1 class="project-alias">GH</h1>
+                    <p class="project-name">Green House</p>
+                </div>
+                <div class="project">
+                    <h1 class="project-alias">CP</h1>
+                    <p class="project-name">Cyber Punk</p>
+                </div>
+                <div class="project">
+                    <h1 class="project-alias">EC</h1>
+                    <p class="project-name">Easy Crypto</p>
+                </div>
+            </div>
+        </div>
+        <div class="tasks-div">
+            <h1 class="project-head" id="project-head">Cyber Punk</h1>
+            <p class="project-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci libero cum provident earum, exercitationem, illum eos voluptatibus magnam quibusdam animi quo, minus aut distinctio quia repellendus dicta porro nam hic.</p>
+            <div class="tasks" id="tasks">
+                <h1 class="tasks-head">Today</h1>
+                <button class="add-task" id="add-task"><svg width="40" height="40" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"></path>
+                  </svg></button>
+                  <div class="create-task" id="create-task">
+                    <label for="newTaskInput">Create Task: </label>
+                    <textarea name="newTaskInput" id="newTaskInput" cols="30" rows="10"></textarea>
+                    <button class="submit-task" id="submit-task">Submit</button>
+                  </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
