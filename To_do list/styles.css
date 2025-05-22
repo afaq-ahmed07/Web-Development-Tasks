@@ -1,171 +1,206 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
-*{
-    margin: 0;
-    padding: 0;
-    scroll-behavior: smooth;
-    text-decoration: none;
-    font-family: 'Poppins',sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
 }
-body{
-    background-color: gainsboro;
+body {
+  background-color: gainsboro;
 }
-.to-do-div{
+.to-do-div {
+  display: flex;
+  background: #001220;
+  height: max-content;
+}
+.projects-div {
+  flex-basis: 50%;
+  height: 120dvh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.projects-info {
+  margin-top: 5rem;
+}
+.profile-head {
+  color: #ffffff;
+  padding-bottom: 6px;
+}
+.welcome {
+  color: rgb(147, 147, 153);
+  padding-bottom: 6px;
+}
+.search-project {
+  margin: 1rem;
+  width: 100%;
+  height: 50px;
+  border-radius: 50px;
+  background-color: rgba(228, 222, 222, 0.337);
+  border: none;
+  padding-left: 3rem;
+  color: #ffffff;
+  font-weight: 600;
+}
+.search-project::placeholder {
+  color: rgb(147, 147, 153);
+  font-weight: 600;
+}
+.search-icon {
+  position: relative;
+  top: -3.4rem;
+  left: 1.5rem;
+}
+.project-heading {
+  margin-top: 1rem;
+  color: white;
+}
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1rem;
+  width: 60%;
+  margin-top: 1.4rem;
+}
+.project-alias {
+  text-align: center;
+  color: #ffffff;
+  padding: 1.2rem;
+  border-radius: 10px;
+  margin-bottom: 1.3rem;
+  background-image: radial-gradient(
+      circle at 17% 77%,
+      rgba(17, 17, 17, 0.04) 0%,
+      rgba(17, 17, 17, 0.04) 50%,
+      rgba(197, 197, 197, 0.04) 50%,
+      rgba(197, 197, 197, 0.04) 100%
+    ),
+    radial-gradient(
+      circle at 26% 17%,
+      rgba(64, 64, 64, 0.04) 0%,
+      rgba(64, 64, 64, 0.04) 50%,
+      rgba(244, 244, 244, 0.04) 50%,
+      rgba(244, 244, 244, 0.04) 100%
+    ),
+    radial-gradient(
+      circle at 44% 60%,
+      rgba(177, 177, 177, 0.04) 0%,
+      rgba(177, 177, 177, 0.04) 50%,
+      rgba(187, 187, 187, 0.04) 50%,
+      rgba(187, 187, 187, 0.04) 100%
+    ),
+    linear-gradient(19deg, rgb(28, 117, 250), rgb(34, 2, 159));
+}
+.project-name {
+  color: rgb(147, 147, 153);
+  font-weight: 600;
+}
+.tasks-div {
+  border-radius: 20px;
+  background: #ffffff;
+  flex-basis: 50%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+  margin-right: 2rem;
+  padding-right: 3rem;
+  margin-bottom: 1rem;
+}
+.project-head,
+.tasks-head,
+.project-desc {
+  padding-left: 5rem;
+  padding-top: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 0.5rem;
+}
+.project-head {
+  padding-top: 4rem;
+}
+.tasks-add-div{
     display: flex;
-    background: #04171c;
-    height: max-content;
-    margin: 1rem;
-    border-radius: 20px;
+    justify-content: center;
 }
-.projects-div{
-    flex-basis: 50%;
-    height: 120dvh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.tasks-head {
+  flex-basis: 80%;
 }
-.projects-info{
-    margin-top: 5rem;
-}
-.profile-head{
-    color: #ffffff;
-    padding-bottom: 6px;
-}
-.welcome{
-    color: rgb(147, 147, 153);
-    padding-bottom: 6px;
-}
-.search-project{
-    margin: 1rem;
-    width: 100%;
-    height: 50px;
-    border-radius: 50px;
-    background-color: rgba(228, 222, 222, 0.337);
-    border: none;
-    padding-left: 3rem;
-}
-.search-project::placeholder{
-    color: rgb(147, 147, 153);
-    font-weight: 600;
-}
-.search-icon{
-    position: relative;
-    top: -3.4rem;
-    left: 1.5rem;
-}
-.project-heading{
-    margin-top: 1rem;
-    color: white;
-}
-.projects{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 1rem;
-    width: 60%;
-    margin-top: 1.4rem;
-}
-.project-alias{
-    background: aqua;
-    padding: 1.2rem;
-    border-radius: 10px;
-    margin-bottom: 1.3rem;
-}
-.project-name{
-    color: rgb(147, 147, 153);
-    font-weight: 600;
-}
-.tasks-div{
-    border-radius: 20px;
-    background: #ffffff;
-    flex-basis: 50%;
-    height: fit-content;
-    display: flex;
-    flex-direction: column;
-    margin-top: 1rem;
-    margin-right: 2rem;
-    padding-right: 3rem;
-
-}
-.project-head,.tasks-head,.project-desc{
-    padding-left: 5rem;
-    padding-top: 1rem;
-    padding-right: 1rem;
-    padding-bottom: 0.5rem;
-}
-.project-head{
-    padding-top: 4rem;
-}
-.tasks-head{
-    flex-basis: 50%;
-    margin-left: -3rem;
-}
-.tasks{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    border: 2px solid  black;
-    margin-top: 2rem;
-    margin-left: 3rem;
-    margin-right: 1rem;
-    border-radius: 20px;
-    width: 90%;
-    margin-bottom: 1rem;
-}
-.add-task{
+.add-task {
     flex-basis: 20%;
     background: transparent;
     border: none;
     margin-top: 1rem;
+  }
+.tasks {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  border: 2px solid black;
+  margin-top: 2rem;
+  margin-left: 3rem;
+  margin-right: 1rem;
+  border-radius: 20px;
+  width: 90%;
+  margin-bottom: 1rem;
 }
-.create-task{
-    flex-basis: 80%;
-    margin-left: 4rem;
-    display: flex;
-    flex-direction: column;
+.create-task {
+  flex-basis: 80%;
+  margin-left: 4rem;
+  display: flex;
+  flex-direction: column;
 }
-label{
-    font-size: 1.3rem;
-    font-weight: 500;
-    margin-left: 1rem;
-    padding-bottom: 0.5rem;
+.create-task-label {
+  font-size: 1.3rem;
+  font-weight: 500;
+  margin-left: 1rem;
+  padding-bottom: 0.5rem;
+  margin-top: 1rem;
 }
-textarea{
-    border-radius: 20px;
-    font-size: 1.2rem;
-    padding: 1rem;
+textarea {
+  border-radius: 20px;
+  font-size: 1.2rem;
+  padding: 1rem;
 }
-.submit-task{
-    width: 7rem;
-    cursor: pointer;
-    background-color: aqua;
-    padding: 0.5rem;
-    border-radius: 20px;
-    margin: 0.7rem;
-    font-size: 1.2rem;
-    font-weight: 400;
-    border: none;
+.submit-task {
+  width: 7rem;
+  cursor: pointer;
+  background-color: #001220;
+  padding: 0.5rem;
+  border-radius: 20px;
+  margin-left: 10rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  font-weight: 400;
+  border: none;
+  color: white;
 }
-#task-checkbox{
-    margin-left: 1.9rem;
-    flex-basis: 17%;
-    margin-bottom: 1rem;
+.task-checkbox {
+  margin-left: 1.9rem;
+  flex-basis: 17%;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
 }
-#task-label{
-    flex-basis: 50%;
-    padding-top: 0.2rem;
-    margin-bottom: 1rem;
-    font-size: 1.5rem;
+.task-label {
+  flex-basis: 50%;
+  padding-top: 0.2rem;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  margin-top: 1rem;
 }
-#del-button{
-    flex-basis: 20%;
-    margin-right: 1rem;
-    margin-bottom: 1rem;
-    width: 7rem;
-    cursor: pointer;
-    background-color: beige;
-    padding: 0.5rem;
-    border-radius: 20px;
-    font-size: 1.2rem;
-    font-weight: 400;
-    border: none;
+.del-button {
+  flex-basis: 20%;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  width: 7rem;
+  cursor: pointer;
+  background-color: beige;
+  padding: 0.5rem;
+  border-radius: 20px;
+  font-size: 1.2rem;
+  font-weight: 400;
+  border: none;
+  margin-top: 1rem;
 }

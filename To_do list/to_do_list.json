@@ -1,0 +1,30 @@
+[
+    {
+      "project": "Green House",
+      "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci libero cum provident earum, exercitationem, illum eos voluptatibus magnam quibusdam animi quo, minus aut distinctio quia repellendus dicta porro nam hic.",
+      "tasks": [
+        {
+          "checkbox": true,
+          "label": "Hello",
+          "deleteButton": true
+        },
+        {
+          "checkbox": false,
+          "label": "Task 2",
+          "deleteButton": true
+        }
+      ]
+    },
+    {
+      "project": "Cyber Punk",
+      "description": "Another description for Cyber Punk project",
+      "tasks": [
+        {
+          "checkbox": true,
+          "label": "Cyber Task",
+          "deleteButton": true
+        }
+      ]
+    }
+  ]
+  

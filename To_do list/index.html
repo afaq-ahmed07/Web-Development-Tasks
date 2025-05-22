@@ -21,15 +21,15 @@
                 <h3 class="project-heading">Projects</h3>
             </div>
             <div class="projects">
-                <div class="project">
+                <div class="project" onclick="project_click(this)">
                     <h1 class="project-alias">GH</h1>
                     <p class="project-name">Green House</p>
                 </div>
-                <div class="project">
+                <div class="project" onclick="project_click(this)">
                     <h1 class="project-alias">CP</h1>
                     <p class="project-name">Cyber Punk</p>
                 </div>
-                <div class="project">
+                <div class="project" onclick="project_click(this)">
                     <h1 class="project-alias">EC</h1>
                     <p class="project-name">Easy Crypto</p>
                 </div>
@@ -37,14 +37,16 @@
         </div>
         <div class="tasks-div">
             <h1 class="project-head" id="project-head">Cyber Punk</h1>
-            <p class="project-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci libero cum provident earum, exercitationem, illum eos voluptatibus magnam quibusdam animi quo, minus aut distinctio quia repellendus dicta porro nam hic.</p>
-            <div class="tasks" id="tasks">
+            <p class="project-desc" id="project-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci libero cum provident earum, exercitationem, illum eos voluptatibus magnam quibusdam animi quo, minus aut distinctio quia repellendus dicta porro nam hic.</p>
+            <div class="tasks-add-div">
                 <h1 class="tasks-head">Today</h1>
                 <button class="add-task" id="add-task"><svg width="40" height="40" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <path d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"></path>
                   </svg></button>
+            </div>
+            <div class="tasks" id="tasks">
                   <div class="create-task" id="create-task">
-                    <label for="newTaskInput">Create Task: </label>
+                    <label for="newTaskInput" class="create-task-label">Create Task: </label>
                     <textarea name="newTaskInput" id="newTaskInput" cols="30" rows="10"></textarea>
                     <button class="submit-task" id="submit-task">Submit</button>
                   </div>
